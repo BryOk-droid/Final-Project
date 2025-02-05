@@ -4,3 +4,8 @@ body {
  background-color: white;
  text-align: center;
 }
+header {
+ background: lightseagreen;
+ color: white;
+ padding: 15px 0;
+}
