@@ -33,3 +33,14 @@ nav ul li a {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea,
+form button {
+  margin: 10px 0;
+  padding: 10px;
+}
