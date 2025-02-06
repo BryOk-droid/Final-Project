@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log("2. Pediatrics");
   console.log("3. Cardiology");
   console.log("4. Dermatology");
+  console.log("4. Orthopedics");
+  console.log("4. Neurology");
 
   // Log activity when the "Book an Appointment" button is clicked
   const bookAppointmentButton = document.querySelector(".btn");
