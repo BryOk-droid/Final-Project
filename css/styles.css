@@ -150,3 +150,39 @@ header {
   font-size: 20px;
   color: black;
 }
+
+#contact {
+  background: white;
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 30px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 16px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.footer-contact {
+  background: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
