@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Log contact details
   console.log("Contact Information:");
-  console.log("Email: info@medicarehub.com");
-  console.log("Phone: +123 456 7890");
-  console.log("Address: 123 Healthcare Street, City, Country");
+  console.log("Email: medicarehub@yahoo.com");
+  console.log("Phone: +254715462900");
+  console.log("Address: MediCare Hub, Nairobi, Kenya");
 });
