@@ -16,23 +16,35 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(`${fieldId} updated: ${currentValue}`);
     });
   });
+
   // Log form submissions
   appointmentForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-    const date = document.getElementById("date").value;
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const date = document.getElementById("date").value.trim();
+    const message = document.getElementById("message").value.trim();
 
     if (name && email && phone && date) {
       confirmationMessage.innerText = `Thank you, ${name}! Your appointment is booked for ${date}. We will contact you at ${email}.`;
+      confirmationMessage.style.color = "#28a745"; // Green for success
+      confirmationMessage.style.display = "block";
+
       console.log(
-        `Appointment Booked: Name: ${name}, Email: ${email}, Phone: ${phone}, Date: ${date}`
+        `Appointment Booked: Name: ${name}, Email: ${email}, Phone: ${phone}, Date: ${date}, Message: ${
+          message || "No additional message provided"
+        }`
       );
+
+      // Reset the form after successful submission
       appointmentForm.reset();
     } else {
       confirmationMessage.innerText = "Please fill out all required fields.";
+      confirmationMessage.style.color = "red"; // Red for error
+      confirmationMessage.style.display = "block";
+
       console.log("Form submission failed: Missing required fields.");
     }
   });
